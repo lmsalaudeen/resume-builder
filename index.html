@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form">
+        
+        <div class="basic-info">
+            <h3>Basic Info</h3>
+            <label for="Name">Name</label>
+            <input id="nameInput" type="text" value="Latifah Salaudeen" /><br>
+            
+                <label for="Location">Location</label>
+                <input id="locationInput" type="text" value="Peterborough" /><br>
+            
+                <label for="email_address">Email Address</label>
+                <input id="emailInput" type="email" value="example@gmail.com"/><br>
+            
+                <label for="Phone number">Phone Number</label>
+                <input id="phoneInput" type="tel" placeholder="+44000" /> <br>
+           
+            <hr>
+        </div>
+            
+        <div class="summary">
+                <label><h3>Summary</h3></label><br />
+                <textarea id="summaryInput" type="text" placeholder="Recent grad - Master’s in Bioinformatics"> </textarea>
+            <hr>
+        
+        </div>
+        
+        <div class="education">
+            <h3>Education </h3>  
+            <div class="education-entry-input">
+                <div class="firstEdu">
+                    <label>Qualification</label> <input id="qualificationInput" type="text"><br>
+                    <label>Institution</label><input id="institutionInput" type="text"><br>
+                
+                    <label>Start Date</label>
+                    <input type="date" id="qualStartDateInput">
+                
+                    <label>End Date</label>
+                    <input type="date" id="qualEndDateInput">
+                </div>
+            </div>
+
+            <div class="add-remove"> 
+                <button id="addEduButton">Add Education</button>
+                <button id="removeEduButton">Remove Education</button>
+                <hr>
+            </div>
+         
+        </div>
+
+        <div class="training">
+            <h3>Other Training </h3>
+            <div class="training-entry-input">
+                
+                <label>Course</label><input type="text" id="courseInput"><br>
+                <label>Provider</label><input type="text" id="courseProviderInput"><br>
+
+                <label>Start Date</label><input type="date" id="courseStartDateInput">
+                <label>End Date</label><input type="date" id="courseEndDateInput">
+               <br>
+                <button id="addTrainingButton">Add Training</button>
+                <button id="removeTrainingButton">Remove Training</button>
+                <hr>
+
+            </div>
+            
+        </div>
+
+        <div id="Work-Experience">
+            <h3>Work Experience </h3>
+            <div class="work-entry-input">
+                
+                
+                <label>Job Title</label><input type="text" id="jobTitleInput"><br>
+                <label>Employer</label><input type="text" id="employerInput"><br>
+            
+            
+                <label>Start Date</label><input type="date" id="jobStartDateInput">
+                <label>End Date</label><input type="date" id="jobEndDateInput">
+            
+                    <br>
+            
+                    <label>Job responsibilities</label><br>
+                    <textarea id="jobReponsibilitiesInput"></textarea><br>
+                    <!-- <button id="addJobResponsibilitiesButton">+</button>
+                    <button id="removeJobResponsibilitiesButton">-</button><br> -->
+                
+                    <button id="addJobButton">Add Job</button>
+                    <button id="removeJobButton">Remove Job</button>
+                <hr>
+                
+            </div>
+        
+
+        <div class="projects">
+            <h3>Projects </h3>
+            <div class="project-entry">
+                
+                    <label>Project Title</label><input type="text" id="projectTitleInput"><br>
+                    <label>Project link</label><input type="url" id="projectLinkInput"><br>
+                
+                    <label>Project Description</label><br>
+                    <textarea id="projectDescriptionInput"></textarea>
+                </p>
+                <button id="addProjectButton">Add Project</button>
+                <button id="removeProjectButton">Remove Project</button>
+                <hr>
+            </div>
+            
+            
+        </div>
+        
+        <div class="technical-skills">
+            <h3>Technical Skills </h3>
+            <div class="project-entry">
+                
+                <p>
+                    <label>Add Skills</label><br>
+                    <input type="text" id="skillInput">
+                    <button id="addSkillButton">+</button>
+                    <button id="removeSkillButton">-</button>
+                </p>
+                <hr>
+            </div>
+            
+        </div>
+       </div>
+       </section>
+
+    </div>
+
+    <section class="resume">
+        <div class="header">
+            <div class="basic-info">
+                <h1 id="name"> Latifah Mojisola Salaudeen </h1> 
+                <p id="location">Peterborough, United Kingdom</p>
+                <p id="email">lmsalaudeen@gmail.com</p>
+                <p id="phone">+44 07372730000</p>
+            </div>
+        
+        </div>
+
+        <div class="summary">
+            <h2> Summary </h2>
+            <hr>
+            <p id="summary">
+                Recent grad - Master’s in Bioinformatics, and CBF Bootcamp in Software Engineering. 
+                Has a Master’s in Microbiology and completed the Google Data Analytics Course. 
+                I am also a copy and style editor. 
+                I help writers bring the best out of their ideas, and formats documents to conform to appropriate style. 
+                My goal is to be a bioinformatics engineer and I am developing my skills for that. 
+                I can code in Python, R, SQL and Java. 
+            </p>
+        
+        </div>
+
+        <div class="Education">
+            <h2>Education </h2>
+            <hr>
+            <div class="educationEntryOutput">
+                <div class="firstQual">
+                    <strong id="qualification">MSc Bioinformatics</strong>,
+                    <span id="institution"> Teesside University</span>
+                    <br>
+                    <span class=date> 
+                        <span id="qualStartDate">January 2022</span> - <span id="qualEndDate">January 2024</span>
+                    </span>
+                </div>   
+            </div>
+            
+            
+        </div>
+
+        <div class="training">
+            <h2>Other Training </h2>
+            <hr>
+            <div class="training-entry-output">
+                <div id="firstTrainingInput">
+                    <strong id="course">Introduction to Javascript</strong>,
+                    <span id="courseProvider">Code First Girls</span>
+                
+                    <p class=date> 
+                    <span id="courseStartDate">January 2024</span> - <span id="courseEndDate">March 2024</span>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="Work-Experience">
+            <h2>Work Experience </h2>
+            <hr>
+            <div class="work-entry-output">
+                <div id="firstWorkEntry">
+                <p>
+                    <strong id="jobTitle">Bioinformatics Intern</strong>, 
+                    <span id="employer">Teesside University</span> 
+                </p>
+                <p class=date> 
+                    <span id="jobStartDate">January 2023</span> - <span id="jobEndDate">May 2023</span>
+                </p>
+                <ul id="jobReponsibilities">
+                    <li>Data cleaning</li>
+                    <li>Data viz</li>
+                    <li>Lit. review</li>
+                </ul>
+            </div>
+            </div>
+        
+        </div>
+
+        <div class="projects">
+            <h2>Projects </h2>
+            <hr>
+            <div class="project-entry-output">
+                <div id="firsProjectEntry">
+                     <a id="projectLink" href="http://127.0.0.1:5500/resume.html">Resume Builder</a>
+                
+                <p id="projectDescription">
+                    I built a resume formatter. Concepts explored: ...
+                </p>
+             </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="technical-skills">
+            <h2>Technical Skills </h2>
+            <hr>
+            <div id="skills"></div>
+            <ul id="skillsOutput">
+                <li>Programming languages: Javascript, R, Python</li>
+                <li>Tools: SPSS</li>
+            </ul>
+            
+        </div>
+        
+    </section>
+<footer>
+    <p> &#169; lmsalaudeen</p>
+    <!-- <button id="download">Download PDF</button> -->
+</footer>
+    <script src="main.js"></script>
+    <script src="project.js"></script>
+    <script src="training.js"></script>
+    <script src="work-experience.js"></script>
+    <script src="education.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{ 
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    padding: 50px 30px 50px 30px;
+}
+
+section{
+  
+}
+
+form{
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    margin: 0;
+}
+
+.header{
+  text-align: center;
+  line-height: 5px;
+  border-bottom: 1px dotted #bfadad;
+}
+
+h1{
+    text-align: center;
+    font-size: 16pt;
+    }
+    
+h2{
+    text-align: center;
+    font-size: 14pt;
+    }
+
+h3{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+label{
+    font-size: 12pt;
+    padding-right: 5px;
+}
+
+input{ 
+  width: 50%;
+  margin: 4px 0;
+  height: .1cm;
+  font-size: 10pt;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+
+textarea{ 
+    border-top: 0;
+    margin-top: 0;
+    padding: 10px;
+    width: 90%;
+    height: 1.5cm;
+    font-size: 10pt;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+
+input[type=date]{
+    width: 2.1cm;
+  }
+
+button{
+    color: purple;
+    background-color: lightyellow;
+    width: 5cm;
+    font-size: 10pt;
+    height: .8cm;
+    margin: 4px 0;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+button:hover{
+    background-color: navajowhite;
+}
+
+#addSkillButton, #removeSkillButton, 
+#addJobResponsibilitiesButton, #removeJobResponsibilitiesButton{
+    /* background-color: navajowhite; */
+    width: 2cm;
+    margin: 0;
+    font-size: 10pt;
+    height: .6cm;
+    margin: 4px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.newQualField{
+    background-color: aqua;
+}
+
+#addQualButton{
+    float: right;
+}
+
+footer {
+  text-align: end;
+  margin-top: 100px;
+  padding-bottom: 0;
+}
+
+@media print {
+    body{
+        display: contents;
+    }
+	.form, footer  {
+		display: none;
+	}
+}
+
