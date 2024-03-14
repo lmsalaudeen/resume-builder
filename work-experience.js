@@ -17,14 +17,13 @@ addJobButton.addEventListener('click', function() {
     const workEndDateInputValue = workEndDateInput.value;
 
     // Check if the input is not empty
-    if (jobTitleInputValue && employerInputValue && workStartDateInputValue && workEndDateInputValue) {
+    if (jobTitleInputValue && employerInputValue && 
+        workStartDateInputValue && workEndDateInputValue && jobReponsibilitiesInput.value) {
       
         const newWorkField = document.createElement("div");
         newWorkField.className = "newWorkField";
 
         workFieldResume.appendChild(newWorkField);
-
-        newWorkField.appendChild(document.createElement("br"));
 
         const jobTitle = document.createElement("strong");
         jobTitle.textContent = jobTitleInputValue;
@@ -41,7 +40,10 @@ addJobButton.addEventListener('click', function() {
         newWorkField.append(workEndDateInputValue);
         newWorkField.appendChild(document.createElement("br"));
 
-        newWorkField.append(jobReponsibilitiesInput.value);
+        const jobReponsibilitiesItem = document.createElement("li");
+        jobReponsibilitiesItem.textContent = jobReponsibilitiesInput.value;
+        newWorkField.appendChild(jobReponsibilitiesItem);
+
         newWorkField.appendChild(document.createElement("br"));
 
         jobTitleInput.value = '';

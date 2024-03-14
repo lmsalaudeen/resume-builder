@@ -9,6 +9,7 @@ body{
     grid-template-columns: 1fr 1fr;
     column-gap: 15px;
     padding: 50px 30px 50px 30px;
+   
 }
 
 section{
@@ -59,6 +60,19 @@ input{
   border-radius: 10px;
 }
 
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: unset;
+}
+
+a:visited {
+    color: unset;
+  }
+
+a:hover {
+color: aliceblue;
+}
 
 textarea{ 
     border-top: 0;
@@ -125,3 +139,16 @@ footer {
 	}
 }
 
+@media only screen 
+  and (min-width: 120px) and (max-width: 799px) {
+    #name, #location{
+        line-height: 2vh;
+  }
+}
+  
+@media only screen 
+  and (min-width: 800px) and (max-width: 1200px) {
+    #name{
+        line-height: 2vh;
+  }
+}

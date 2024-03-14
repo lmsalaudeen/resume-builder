@@ -25,8 +25,11 @@ addProjectButton.addEventListener('click', function() {
         newProjectField.append(projectTitle);
 
         newProjectField.appendChild(document.createElement("br"));
-        newProjectField.append(projectDescriptionInput.value);
-        newProjectField.appendChild(document.createElement("br"));
+
+        const projectDescriptionItem = document.createElement("li");
+        projectDescriptionItem.textContent = projectDescriptionInput.value;
+        newProjectField.appendChild(projectDescriptionItem);
+
         newProjectField.appendChild(document.createElement("br"));
       
         projectTitleInput.value = '';
